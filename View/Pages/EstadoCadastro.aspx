@@ -1,9 +1,9 @@
-﻿<%@ Page Language="C#" Inherits="View.Default" %>
+﻿<%@ Page Language="C#" Inherits="View.Pages.Default" %>
 <!DOCTYPE html>
 <html>
 <head runat="server">
-	<title>Default</title>
-        <link type="text/css" rel="stylesheet" href="Content/bootstrap.css"/>
+    <title>Default</title>
+        <link type="text/css" rel="stylesheet" href="../Content/bootstrap.css"/>
 </head>
 <body>
         <div class="container">
@@ -60,7 +60,7 @@
 
       <!-- Main component for a primary marketing message or call to action -->
       <div class="jumbotron">
-        <h1>Sisteme Clinica</h1>
+        <h1>Cadastrar Estado</h1>
         <p>Sistema de cadastramento de pacientes.</p>
         <p>
           <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">Cadastar &raquo;</a>
@@ -68,14 +68,14 @@
       </div>
 
     </div> <!-- /container -->
-	<form id="principal" runat="server" class="form-horizontal">
+    <form id="principal" runat="server" class="form-horizontal">
             <div class>
                 
             </div>
            
             
-	</form>
-        <script src="Scripts/jquery-1.9.1.js"></script>
-        <script src="Scripts/bootstrap.js"></script>
+    </form>
+        <script src="../Scripts/jquery-1.9.1.js"></script>
+        <script src="../Scripts/bootstrap.js"></script>
 </body>
 </html>

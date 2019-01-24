@@ -13,6 +13,6 @@ namespace View {
 	
 	public partial class Default {
 		
-		protected System.Web.UI.HtmlControls.HtmlForm form1;
+		protected System.Web.UI.HtmlControls.HtmlForm principal;
 	}
 }

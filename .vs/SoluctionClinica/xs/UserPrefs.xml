@@ -1,0 +1,28 @@
+﻿<Properties StartupConfiguration="{EA0C683E-E6F6-4E40-8C3D-2689E6B15352}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="View/Pages/EstadoCadastro.aspx.cs">
+    <Files>
+      <File FileName="View/Default.aspx" Line="37" Column="20" />
+      <File FileName="View/Default.aspx.cs" Line="1" Column="1" />
+      <File FileName="View/Pages/EstadoCadastro.aspx" Line="1" Column="1" />
+      <File FileName="View/Pages/EstadoCadastro.aspx.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="SoluctionClinica" expanded="True">
+            <Node name="View" expanded="True">
+              <Node name="Default.aspx" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.View PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+</Properties>
