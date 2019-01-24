@@ -1,0 +1,2 @@
+/Users/aluno/Projects/SoluctionClinica/DAL/obj/Debug/DAL.csprojAssemblyReference.cache
+/Users/aluno/Projects/SoluctionClinica/DAL/obj/Debug/DAL.csproj.CoreCompileInputs.cache

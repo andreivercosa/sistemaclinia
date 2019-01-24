@@ -1,0 +1,5 @@
+/Users/aluno/Projects/SoluctionClinica/BLL/bin/Debug/BLL.dll
+/Users/aluno/Projects/SoluctionClinica/BLL/bin/Debug/BLL.pdb
+/Users/aluno/Projects/SoluctionClinica/BLL/obj/Debug/BLL.csproj.CoreCompileInputs.cache
+/Users/aluno/Projects/SoluctionClinica/BLL/obj/Debug/BLL.dll
+/Users/aluno/Projects/SoluctionClinica/BLL/obj/Debug/BLL.pdb
