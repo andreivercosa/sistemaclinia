@@ -1,0 +1,4 @@
+/Users/aluno/Projects/SoluctionClinica/View/bin/View.dll
+/Users/aluno/Projects/SoluctionClinica/View/obj/Release/View.csproj.CoreCompileInputs.cache
+/Users/aluno/Projects/SoluctionClinica/View/obj/Release/View.dll
+/Users/aluno/Projects/SoluctionClinica/View/obj/Release/View.csprojAssemblyReference.cache

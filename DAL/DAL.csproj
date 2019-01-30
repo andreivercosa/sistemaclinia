@@ -3,11 +3,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{AB38A7D9-D857-499B-BFFE-28E718A4D550}</ProjectGuid>
+    <ProjectGuid>{28A474CA-37CB-4579-AB69-CB7099E1058B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>DAL</RootNamespace>
     <AssemblyName>DAL</AssemblyName>
-    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -28,31 +28,22 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.ComponentModel" />
-    <Reference Include="System.ComponentModel.DataAnnotations" />
-    <Reference Include="System.Configuration" />
-    <Reference Include="System.Configuration.Install" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Drawing.Design" />
-    <Reference Include="System.Management" />
-    <Reference Include="System.Transactions" />
-    <Reference Include="System.Xml" />
     <Reference Include="MySql.Data">
       <HintPath>..\packages\MySql.Data.6.9.12\lib\net45\MySql.Data.dll</HintPath>
     </Reference>
+    <Reference Include="System.Data" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MyClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Percistence\EstadoDal.cs" />
-    <Compile Include="Percistence\EspecialidadeDal.cs" />
-    <Compile Include="Percistence\TipoExameDal.cs" />
-    <Compile Include="Percistence\Conexao.cs" />
+    <Compile Include="Persistence\EstadoDal.cs" />
+    <Compile Include="Persistence\EspecialidadeDal.cs" />
+    <Compile Include="Persistence\TipoExameDal.cs" />
+    <Compile Include="Persistence\Conexao.cs" />
+    <Compile Include="Persistence\CidadeDal.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Percistence\" />
+    <Folder Include="Persistence\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
@@ -60,7 +51,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BLL\BLL.csproj">
-      <Project>{DBCAEEC0-CE41-418A-9C48-B127DF6F7C92}</Project>
+      <Project>{61EF3082-22C5-45D8-9E29-B75ACC86B52A}</Project>
       <Name>BLL</Name>
     </ProjectReference>
   </ItemGroup>

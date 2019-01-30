@@ -1,81 +1,31 @@
 ﻿<%@ Page Language="C#" Inherits="View.Default" %>
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head runat="server">
 	<title>Default</title>
-        <link type="text/css" rel="stylesheet" href="Content/bootstrap.css"/>
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="Content/bootstrap.css" />
 </head>
 <body>
-        <div class="container">
-
-      <!-- Static navbar -->
-      <nav class="navbar navbar-default">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Sistema Clinica</a>
-          </div>
-          <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Home</a></li>
-               <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Estado <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Cadastro</a></li>
-                  <!--<li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li class="dropdown-header">Nav header</li>
-                  <li><a href="#">Separated link</a></li>
-                  <li><a href="#">One more separated link</a></li>-->
-                </ul>
-              </li>
-              <li><a href="#">Contato</a></li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li class="dropdown-header">Nav header</li>
-                  <li><a href="#">Separated link</a></li>
-                  <li><a href="#">One more separated link</a></li>
-                </ul>
-              </li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-              <li class="active"><a href="./">Default <span class="sr-only">(current)</span></a></li>
-              <li><a href="../navbar-static-top/">Static top</a></li>
-              <li><a href="../navbar-fixed-top/">Fixed top</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
-        </div><!--/.container-fluid -->
-      </nav>
-
+        
+         <div class="container">
+         <!-- #include file ="menu.inc" -->
       <!-- Main component for a primary marketing message or call to action -->
       <div class="jumbotron">
-        <h1>Sisteme Clinica</h1>
-        <p>Sistema de cadastramento de pacientes.</p>
-        <p>
-          <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">Cadastar &raquo;</a>
-        </p>
+        
+        <form id="principal" runat="server" class="form-horizontal">
+            <div class="form-group">
+                <h3>Estamos em Home/Inicio Cadastro</h3>
+                <h3>Cabe&ccedil;ão &copy;</h3>
+                <!-- #include file="content.inc" -->
+            </div>
+        </form>            
+                
       </div>
 
     </div> <!-- /container -->
-	<form id="principal" runat="server" class="form-horizontal">
-            <div class>
-                
-            </div>
-           
-            
-	</form>
-        <script src="Scripts/jquery-1.9.1.js"></script>
-        <script src="Scripts/bootstrap.js"></script>
+	
+    <script src="Scripts/jquery-1.9.1.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
 </body>
 </html>

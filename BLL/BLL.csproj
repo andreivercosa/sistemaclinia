@@ -3,11 +3,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{DBCAEEC0-CE41-418A-9C48-B127DF6F7C92}</ProjectGuid>
+    <ProjectGuid>{61EF3082-22C5-45D8-9E29-B75ACC86B52A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>BLL</RootNamespace>
     <AssemblyName>BLL</AssemblyName>
-    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -32,9 +32,10 @@
   <ItemGroup>
     <Compile Include="MyClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Model\TipoExame.cs" />
     <Compile Include="Model\Estado.cs" />
     <Compile Include="Model\Especialidade.cs" />
+    <Compile Include="Model\TipoExame.cs" />
+    <Compile Include="Model\Cidade.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Model\" />

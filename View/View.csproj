@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{EA0C683E-E6F6-4E40-8C3D-2689E6B15352}</ProjectGuid>
+    <ProjectGuid>{B62F516F-1D7C-4B00-B2AF-0B3E82616E2A}</ProjectGuid>
     <ProjectTypeGuids>{349C5851-65DF-11DA-9384-00065B846F21};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <RootNamespace>View</RootNamespace>
@@ -59,6 +59,7 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Pages\EstadoCadastro.aspx" />
+    <Content Include="Pages\CidadeCadastro.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">
@@ -76,6 +77,12 @@
     <Compile Include="Pages\EstadoCadastro.aspx.designer.cs">
       <DependentUpon>EstadoCadastro.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Pages\CidadeCadastro.aspx.cs">
+      <DependentUpon>CidadeCadastro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\CidadeCadastro.aspx.designer.cs">
+      <DependentUpon>CidadeCadastro.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="Scripts\jquery-1.9.1.min.map" />
@@ -84,9 +91,21 @@
     <None Include="Content\bootstrap.css.map" />
     <None Include="Content\bootstrap-theme.min.css.map" />
     <None Include="Content\bootstrap-theme.css.map" />
+    <None Include="menu.inc" />
+    <None Include="content.inc" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Pages\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{28A474CA-37CB-4579-AB69-CB7099E1058B}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{61EF3082-22C5-45D8-9E29-B75ACC86B52A}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
