@@ -26,8 +26,6 @@
                    <div class="col-sm-2">
                       Estado
                         <asp:DropDownList id="idEstado" runat="server" CssClass="form-control">
-                            <asp:Listitem Value="1" Text="Amazonas"/> 
-                            <asp:Listitem Value="2" Text="Rio de Janeiro"/> 
                         </asp:DropDownList>
                    </div>
                   <asp:Button id="btnCadastrar" runat="server" Text="Cadastrar" CssClass="btn btn-primary posicaoButton" OnClick="btnCadastrarCidade"/>  

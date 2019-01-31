@@ -52,7 +52,7 @@ namespace View.Pages
 
             foreach(var estado in listaEstado)
             {
-                idEstado.Items.Insert(0, new ListItem(estado.Id.ToString(), estado.Nome));
+                idEstado.Items.Insert(0, new ListItem(estado.Nome, estado.Id.ToString()));
             }
 
 

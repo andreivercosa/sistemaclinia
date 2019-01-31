@@ -2,3 +2,8 @@
 /Users/aluno/Projects/SoluctionClinica/View/obj/Release/View.csproj.CoreCompileInputs.cache
 /Users/aluno/Projects/SoluctionClinica/View/obj/Release/View.dll
 /Users/aluno/Projects/SoluctionClinica/View/obj/Release/View.csprojAssemblyReference.cache
+/Users/aluno/Projects/SoluctionClinica/View/bin/BLL.dll
+/Users/aluno/Projects/SoluctionClinica/View/bin/DAL.dll
+/Users/aluno/Projects/SoluctionClinica/View/bin/MySql.Data.dll
+/Users/aluno/Projects/SoluctionClinica/View/bin/DAL.dll.config
+/Users/aluno/Projects/SoluctionClinica/View/obj/Release/View.csproj.CopyComplete

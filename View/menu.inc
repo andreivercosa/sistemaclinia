@@ -18,12 +18,7 @@
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Estado <span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="http://127.0.0.1:8080/Pages/EstadoCadastro.aspx">Cadastro</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li role="separator" class="divider"></li>
-                <li class="dropdown-header">Nav header</li>
-                <li><a href="#">Separated link</a></li>
-                <li><a href="#">One more separated link</a></li>
+         
               </ul>
             </li>
             
@@ -31,14 +26,18 @@
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cidade <span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="http://127.0.0.1:8080/Pages/CidadeCadastro.aspx">Cadastro</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li role="separator" class="divider"></li>
-                <li class="dropdown-header">Nav header</li>
-                <li><a href="#">Separated link</a></li>
-                <li><a href="#">One more separated link</a></li>
+               
               </ul>
             </li>
+            
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Especialiade <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="http://127.0.0.1:8080/Pages/EspecialidadeCadastro.aspx">Cadastro</a></li>
+                
+              </ul>
+            </li>
+            
           </ul>
          
         </div><!--/.nav-collapse -->

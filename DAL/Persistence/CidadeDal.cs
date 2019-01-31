@@ -7,7 +7,6 @@ namespace DAL.Persistence
 {
     public class CidadeDal : Conexao
     {
-
         public void Salvar(Cidade cidade)
         {
             try

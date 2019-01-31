@@ -1,9 +1,11 @@
 ﻿<Properties StartupConfiguration="{B62F516F-1D7C-4B00-B2AF-0B3E82616E2A}|">
   <MonoDevelop.Ide.ItemProperties.View PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="DAL/Persistence/CidadeDal.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="View/menu.inc">
     <Files>
-      <File FileName="DAL/Persistence/CidadeDal.cs" Line="57" Column="35" />
-      <File FileName="View/Pages/CidadeCadastro.aspx.cs" Line="17" Column="27" />
+      <File FileName="View/Pages/EspecialidadeCadastro.aspx.cs" Line="24" Column="50" />
+      <File FileName="View/Pages/EspecialidadeCadastro.aspx.cs" Line="24" Column="30" />
+      <File FileName="View/Pages/CidadeCadastro.aspx.cs" Line="25" Column="17" />
+      <File FileName="View/menu.inc" Line="34" Column="16" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

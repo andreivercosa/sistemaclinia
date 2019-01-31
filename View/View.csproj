@@ -60,6 +60,7 @@
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Pages\EstadoCadastro.aspx" />
     <Content Include="Pages\CidadeCadastro.aspx" />
+    <Content Include="Pages\EspecialidadeCadastro.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">
@@ -82,6 +83,12 @@
     </Compile>
     <Compile Include="Pages\CidadeCadastro.aspx.designer.cs">
       <DependentUpon>CidadeCadastro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\EspecialidadeCadastro.aspx.cs">
+      <DependentUpon>EspecialidadeCadastro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\EspecialidadeCadastro.aspx.designer.cs">
+      <DependentUpon>EspecialidadeCadastro.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

@@ -42,7 +42,9 @@ namespace DAL.Persistence
                     estado.Nome  =  dataReader["nome"].ToString();
                     estado.Sigla =  dataReader["sigla"].ToString();
 
+                    listaEstado.Add(estado);
                 }
+
                 return listaEstado;
 
             }catch (Exception erro){
