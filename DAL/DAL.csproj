@@ -41,6 +41,7 @@
     <Compile Include="Persistence\TipoExameDal.cs" />
     <Compile Include="Persistence\Conexao.cs" />
     <Compile Include="Persistence\CidadeDal.cs" />
+    <Compile Include="Persistence\MedicoDal.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Persistence\" />

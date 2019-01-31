@@ -61,6 +61,7 @@
     <Content Include="Pages\EstadoCadastro.aspx" />
     <Content Include="Pages\CidadeCadastro.aspx" />
     <Content Include="Pages\EspecialidadeCadastro.aspx" />
+    <Content Include="Pages\MedicoCadastro.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">
@@ -89,6 +90,12 @@
     </Compile>
     <Compile Include="Pages\EspecialidadeCadastro.aspx.designer.cs">
       <DependentUpon>EspecialidadeCadastro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\MedicoCadastro.aspx.cs">
+      <DependentUpon>MedicoCadastro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\MedicoCadastro.aspx.designer.cs">
+      <DependentUpon>MedicoCadastro.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
