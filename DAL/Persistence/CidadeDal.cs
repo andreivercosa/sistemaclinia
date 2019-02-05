@@ -47,7 +47,8 @@ namespace DAL.Persistence
 
                     cidade.Id = Convert.ToInt32(dataReader["id"]);
                     cidade.Descricao = dataReader["descricao"].ToString();
-                    cidade.DtCadastro = dataReader["dtCadastro"].ToString();
+
+                    listaCidade.Add(cidade);
 
                 }
                 return listaCidade;
@@ -62,7 +63,6 @@ namespace DAL.Persistence
                 FecharConexao();
             }
         }
-
         public CidadeDal()
         {
         }

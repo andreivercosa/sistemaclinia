@@ -48,7 +48,7 @@ namespace DAL.Persistence
 
                     medico.Id = Convert.ToInt32(dataReader["id"]);
                     medico.Nome = dataReader["nome"].ToString();
-                    medico.Nome = dataReader["crm"].ToString();
+                    medico.CRM = dataReader["crm"].ToString();
                     medico.DtCadastro = dataReader["dtCadastro"].ToString();
 
                 }

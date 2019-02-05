@@ -42,6 +42,7 @@
     <Compile Include="Persistence\Conexao.cs" />
     <Compile Include="Persistence\CidadeDal.cs" />
     <Compile Include="Persistence\MedicoDal.cs" />
+    <Compile Include="Persistence\PacienteDal.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Persistence\" />

@@ -35,11 +35,11 @@ namespace View.Pages
                 lblMensagem.Attributes.CssStyle.Add("color", "green");
                 lblMensagem.Text = msg;
 
-
+                Response.Redirect("/Page/CidadeCadastro.aspx");
             }
             catch (Exception erro)
             {
-                throw new Exception("Erro");
+                lblMensagem.Text = erro.ToString();
             }
         }
 
@@ -49,7 +49,7 @@ namespace View.Pages
             List<Estado> listaEstado = new List<Estado>();
 
             listaEstado = estadoDal.Listar();
-
+            //idEstado.Items.Clear();
             foreach(var estado in listaEstado)
             {
                 idEstado.Items.Insert(0, new ListItem(estado.Nome, estado.Id.ToString()));

@@ -22,7 +22,7 @@ namespace View.Pages
             {
                 Especialidade especialidade = new Especialidade();
                 especialidade.Descricao = descricao.Text;
-                especialidade.DtCadastro = descricao.Text;
+              
 
                 EspecialidadeDal especialidadeDal = new EspecialidadeDal();
                 especialidadeDal.Salvar(especialidade);

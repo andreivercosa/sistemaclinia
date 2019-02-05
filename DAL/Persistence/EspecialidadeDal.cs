@@ -17,6 +17,7 @@ namespace DAL.Persistence
 
                 command = new MySqlCommand(sql, connection);
                 command.Parameters.AddWithValue("@descricao", especialidade.Descricao);
+                command.Parameters.AddWithValue("@dtCadastro", especialidade.DtCadastro);
                 command.ExecuteNonQuery();
             }
             catch (Exception erro)
@@ -46,6 +47,7 @@ namespace DAL.Persistence
 
                     especialidade.Id = Convert.ToInt32(dataReader["id"]);
                     especialidade.Descricao = dataReader["descricao"].ToString();
+                    especialidade.DtCadastro = dataReader["dtCadastro"].ToString();
 
                     listaEspecialidade.Add(especialidade);
                 }

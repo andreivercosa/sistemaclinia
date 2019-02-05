@@ -37,6 +37,7 @@
     <Compile Include="Model\TipoExame.cs" />
     <Compile Include="Model\Cidade.cs" />
     <Compile Include="Model\Medico.cs" />
+    <Compile Include="Model\Paciente.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Model\" />
