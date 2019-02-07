@@ -96,7 +96,7 @@ namespace DAL.Persistence
             {
 
 
-                var sql = "SELECT * FROM estado WHERE id LIKE '%" + id + "%' ";
+                var sql = "SELECT * FROM estado WHERE id = " + id ;
                 command = new MySqlCommand(sql, connection);
                 dataReader = command.ExecuteReader();
 
@@ -104,7 +104,7 @@ namespace DAL.Persistence
 
                 if (dataReader.Read())
                 {
-
+                    estado.Id = Convert.ToInt32(dataReader["id"]);
                     estado.Nome = dataReader["nome"].ToString();
                     estado.Sigla = dataReader["sigla"].ToString();
 
