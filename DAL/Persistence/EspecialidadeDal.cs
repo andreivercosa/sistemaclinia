@@ -64,6 +64,72 @@ namespace DAL.Persistence
                 FecharConexao();
             }
         }
+
+        public List<Especialidade> ListarNome(string nome)
+        {
+            try
+            {
+                AbrirConexao();
+                var sql = "SELECT * FROM especialidade WHERE descricao LIKE '%" + nome + "%' ";
+                command = new MySqlCommand(sql, connection);
+                dataReader = command.ExecuteReader();
+
+                List<Especialidade> listaEspecialidade = new List<Especialidade>();
+
+                while (dataReader.Read())
+                {
+                    Especialidade especialidade = new Especialidade();
+
+                    especialidade.Id = Convert.ToInt32(dataReader["id"]);
+                    especialidade.Descricao = dataReader["descricao"].ToString();
+                    especialidade.DtCadastro = dataReader["dtCadastro"].ToString();
+
+                    listaEspecialidade.Add(especialidade);
+                }
+
+                return listaEspecialidade;
+
+            }
+            catch (Exception erro)
+            {
+                throw new Exception("Erro ao registrar dado " + erro.Message + erro.ToString());
+            }
+            finally
+            {
+                FecharConexao();
+            }
+        }
+            public Especialidade pesquisarEspecialidade(int id)
+            {
+                try
+                {   
+                    var sql = "SELECT * FROM especialidade WHERE id = " + id ;
+                    command = new MySqlCommand(sql, connection);
+                    dataReader = command.ExecuteReader();
+
+                    Especialidade especialidade = new Especialidade();
+
+                if (dataReader.Read())
+                {
+
+                    especialidade.Id = Convert.ToInt32(dataReader["id"]);
+                    especialidade.Descricao = dataReader["descricao"].ToString();
+
+
+                    }
+                    return especialidade;
+
+                }
+                catch (Exception erro)
+                {
+                    throw new Exception("Erro ao registrar dado " + erro.Message + erro.ToString());
+                }
+                finally
+                {
+
+                }
+            }
+
         public EspecialidadeDal()
         {
         }

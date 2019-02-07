@@ -19,7 +19,8 @@
               <ul class="dropdown-menu">
                 <li><a href="http://127.0.0.1:8080/Pages/EstadoCadastro.aspx">Cadastro</a></li>
                 <li><a href="http://127.0.0.1:8080/Pages/EstadoLista.aspx">Lista</a></li>
-              </ul>
+                <li><a href="http://127.0.0.1:8080/Pages/EstadoPesquisa.aspx">Pesquisar</a></li>
+               </ul>
             </li>
             
             <li class="dropdown">
@@ -35,6 +36,7 @@
               <ul class="dropdown-menu">
             <li><a href="http://127.0.0.1:8080/Pages/EspecialidadeCadastro.aspx">Cadastro</a></li>
             <li><a href="http://127.0.0.1:8080/Pages/EspecialidadeLista.aspx">LISTA</a></li>
+            <li><a href="http://127.0.0.1:8080/Pages/EspecialidadePesquisa.aspx">Pesquisar</a></li>
              </ul>
             </li>
             <li class="dropdown">

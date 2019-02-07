@@ -11,9 +11,16 @@ namespace View.Pages
     {
         public void Page_Load(object sender, EventArgs e)
         {
-            EstadoDal estadoDal = new EstadoDal();
-            gridListaEstado.DataSource = estadoDal.Listar();
+
+        }
+        public void btnPesquisaEstado(object sender, EventArgs e)
+        {
+            string nomeEstado = nome.Text;
+                EstadoDal estadoDal = new EstadoDal();
+
+            gridListaEstado.DataSource = estadoDal.ListarPorNome(nomeEstado);
             gridListaEstado.DataBind();
+
         }
     }
 }

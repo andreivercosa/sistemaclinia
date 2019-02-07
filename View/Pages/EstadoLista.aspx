@@ -18,7 +18,18 @@
           <!-- #include file ="../menu.inc" -->
           
             <form id="principal" runat="server" class="form-horizontal">
-               <asp:GridView runat="server" id="gridListaEstado" AutoGenerateColumns = "false" CssClass="table table-bordered table-hover">
+                <div class="form-group">
+                    <div class="col-lg-12">
+                     <div class="input-group">
+                       <asp:Textbox runat="server" id="nome" autocomplete="off" placeholder="Digite o Estado...." CssClass="form-control"/>
+                       <span class="input-group-btn">
+                         <asp:Button runat="server" id="btnPesquisar" Text="Pesquisar" CssClass="btn btn-default" OnClick="btnPesquisaEstado" />
+                       </span>
+                     </div>
+                   </div>
+                 </div>
+                
+                <asp:GridView runat="server" id="gridListaEstado" AutoGenerateColumns = "false" CssClass="table table-bordered table-hover">
                <Columns>
                     <asp:BoundField DataField="nome" HeaderText="ESTADO" />
                     <asp:BoundField DataField="sigla" HeaderText="ABREVIACAO" >

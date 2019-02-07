@@ -11,9 +11,18 @@ namespace View.Pages
     {
         public void Page_Load(object sender, EventArgs e)
         {
+            //EspecialidadeDal especialidadeDal = new EspecialidadeDal();
+            //gridListaEspecialidade.DataSource = especialidadeDal.Listar();
+            //gridListaEspecialidade.DataBind();
+        }
+        public void btnPesquisarEspecialidade(object sender, EventArgs e)
+        {
+            string nomeEspecialidade = nome.Text;
             EspecialidadeDal especialidadeDal = new EspecialidadeDal();
-            gridListaEspecialidade.DataSource = especialidadeDal.Listar();
+
+            gridListaEspecialidade.DataSource = especialidadeDal.ListarNome(nomeEspecialidade);
             gridListaEspecialidade.DataBind();
+
         }
     }
 }

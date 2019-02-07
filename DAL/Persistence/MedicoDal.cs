@@ -51,6 +51,7 @@ namespace DAL.Persistence
                     medico.CRM = dataReader["crm"].ToString();
                     medico.DtCadastro = dataReader["dtCadastro"].ToString();
 
+                    listaMedico.Add(medico);
                 }
                 return listaMedico;
 

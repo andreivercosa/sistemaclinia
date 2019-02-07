@@ -14,7 +14,8 @@ namespace View.Pages {
 	public partial class EspecialidadeLista {
 		
 		protected System.Web.UI.HtmlControls.HtmlForm principal;
-		
 		protected System.Web.UI.WebControls.GridView gridListaEspecialidade;
-	}
+        protected System.Web.UI.WebControls.TextBox nome;
+    }
 }
+
