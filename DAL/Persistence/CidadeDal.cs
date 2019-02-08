@@ -2,6 +2,7 @@
 using MySql.Data.MySqlClient;
 using BLL.Model;
 using System.Collections.Generic;
+using System.Data;
 
 namespace DAL.Persistence
 {
@@ -52,6 +53,50 @@ namespace DAL.Persistence
 
                 }
                 return listaCidade;
+
+            }
+            catch (Exception erro)
+            {
+                throw new Exception("Erro ao registrar dado " + erro.Message + erro.ToString());
+            }
+            finally
+            {
+                FecharConexao();
+            }
+        }
+        public DataTable ListarNome(string nome)
+        {
+            try
+            {
+
+                var sql = "SELECT * FROM cidade WHERE descricao LIKE '%" + nome + "%' ";
+                command = new MySqlCommand(sql, connection);
+                dataReader = command.ExecuteReader();
+
+                List<Cidade> listaCidade = new List<Cidade>();
+
+                while (dataReader.Read())
+                {
+                    Cidade cidade = new Cidade();
+                    EstadoDal estadoDal = new EstadoDal();
+
+                    cidade.Id = Convert.ToInt32(dataReader["id"]);
+                    cidade.IdEstado = Convert.ToInt32(dataReader["idEstado"]);
+                    cidade.Estado = estadoDal.pesquisarEstado(cidade.IdEstado);
+                    cidade.Descricao = dataReader["descricao"].ToString();
+                    listaCidade.Add(cidade);
+                }
+                DataTable dataTable = new DataTable();
+                dataTable.Columns.Add("idCidade");
+                dataTable.Columns.Add("cidade");
+                dataTable.Columns.Add("estado");
+                dataTable.Columns.Add("siglaEstado");
+
+                foreach (var cidade in  listaCidade)
+                {
+                    dataTable.Rows.Add(cidade.Id, cidade.Descricao, cidade.Estado.Nome, cidade.Estado.Sigla);
+                }
+                return dataTable;
 
             }
             catch (Exception erro)

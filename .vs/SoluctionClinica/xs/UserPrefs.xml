@@ -1,13 +1,13 @@
 ﻿<Properties StartupConfiguration="{B62F516F-1D7C-4B00-B2AF-0B3E82616E2A}|">
   <MonoDevelop.Ide.ItemProperties.View PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="View/Pages/EspecialidadePesquisa.aspx.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="DAL/Persistence/CidadeDal.cs">
     <Files>
-      <File FileName="DAL/Persistence/EspecialidadeDal.cs" Line="115" Column="51" />
-      <File FileName="View/Pages/EspecialidadePesquisa.aspx" Line="31" Column="23" />
-      <File FileName="View/Pages/EspecialidadePesquisa.aspx.cs" Line="33" Column="1" />
-      <File FileName="BLL/Model/Especialidade.cs" Line="12" Column="1" />
-      <File FileName="DAL/Persistence/EstadoDal.cs" Line="110" Column="1" NotebookId="1" />
-      <File FileName="View/Pages/EspecialidadePesquisa.aspx.designer.cs" Line="1" Column="1" NotebookId="1" />
+      <File FileName="View/Pages/CidadeLista.aspx" Line="36" Column="41" />
+      <File FileName="View/Pages/CidadeLista.aspx.cs" Line="18" Column="31" />
+      <File FileName="View/Pages/CidadeLista.aspx.designer.cs" Line="11" Column="69" />
+      <File FileName="DAL/Persistence/CidadeDal.cs" Line="84" Column="47" />
+      <File FileName="BLL/Model/Cidade.cs" Line="8" Column="29" />
+      <File FileName="DAL/Persistence/EstadoDal.cs" Line="91" Column="39" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

@@ -1,8 +1,6 @@
 ﻿using System;
 using MySql.Data.MySqlClient;
 using BLL.Model;
-using DAL.Persistence;
-using System.Threading;
 using System.Collections.Generic;
 
 namespace DAL.Persistence
