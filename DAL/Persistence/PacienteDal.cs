@@ -2,6 +2,7 @@
 using MySql.Data.MySqlClient;
 using BLL.Model;
 using System.Collections.Generic;
+using System.Data;
 
 namespace DAL.Persistence
 {
@@ -52,6 +53,47 @@ namespace DAL.Persistence
                 }
 
                 return listaPaciente;
+
+            }
+            catch (Exception erro)
+            {
+                throw new Exception("Erro ao registrar dado " + erro.Message + erro.ToString());
+            }
+            finally
+            {
+                FecharConexao();
+            }
+        }
+        public DataTable ListarNome(string nome)
+        {
+            try
+            {
+
+                var sql = "SELECT * FROM paciente WHERE nome LIKE '%" + nome + "%' ";
+                command = new MySqlCommand(sql, connection);
+                dataReader = command.ExecuteReader();
+
+
+                DataTable dataTable = new DataTable();
+                dataTable.Columns.Add("paciente");
+                dataTable.Columns.Add("cidade");
+                dataTable.Columns.Add("estado");
+                while (dataReader.Read())
+                {
+                    Paciente paciente = new Paciente();
+                    CidadeDal cidadeDal = new CidadeDal();
+                    EstadoDal estadoDal = new EstadoDal();
+
+
+                    paciente.Id = Convert.ToInt32(dataReader["id"]);
+                    paciente.idCidade = Convert.ToInt32(dataReader["idCidade"]);
+                    paciente.nome = dataReader["nome"].ToString();
+                    paciente.Cidade = cidadeDal.pesquisarCidade (paciente.idCidade);
+                    paciente.Cidade.Estado = estadoDal.pesquisarEstado(paciente.Cidade.IdEstado);
+                    dataTable.Rows.Add(paciente.nome, paciente.Cidade.Descricao,paciente.Cidade.Estado.Nome);
+                }
+
+                return dataTable;
 
             }
             catch (Exception erro)

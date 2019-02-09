@@ -104,6 +104,38 @@ namespace DAL.Persistence
                 FecharConexao();
             }
         }
+
+        public Cidade pesquisarCidade(int id)
+        {
+            try
+            {
+
+
+                var sql = "SELECT * FROM cidade WHERE id = " + id;
+                command = new MySqlCommand(sql, connection);
+                dataReader = command.ExecuteReader();
+
+                Cidade cidade = new Cidade();
+
+                if (dataReader.Read())
+                {
+                    cidade.Id = Convert.ToInt32(dataReader["id"]);
+                    cidade.Descricao = dataReader["descricao"].ToString();
+                    cidade.IdEstado = Convert.ToInt32(dataReader["idEstado"]);
+
+                }
+                return cidade;
+
+            }
+            catch (Exception erro)
+            {
+                throw new Exception("Erro ao registrar dado " + erro.Message + erro.ToString());
+            }
+            finally
+            {
+
+            }
+        }
         public CidadeDal()
         {
         }

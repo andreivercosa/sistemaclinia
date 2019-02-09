@@ -51,6 +51,7 @@
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Paciente <span class="caret"></span></a>
               <ul class="dropdown-menu">
             <li><a href="http://127.0.0.1:8080/Pages/PacienteCadastro.aspx">Cadastro</a></li>
+            <li><a href="http://127.0.0.1:8080/Pages/PacienteLista.aspx">Lista</a></li>
               </ul>
             </li>
           </ul>

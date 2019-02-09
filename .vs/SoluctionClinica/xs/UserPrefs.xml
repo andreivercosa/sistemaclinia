@@ -1,9 +1,9 @@
 ﻿<Properties StartupConfiguration="{B62F516F-1D7C-4B00-B2AF-0B3E82616E2A}|">
   <MonoDevelop.Ide.ItemProperties.View PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="DAL/Persistence/MedicoDal.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="DAL/Persistence/PacienteDal.cs">
     <Files>
-      <File FileName="DAL/Persistence/CidadeDal.cs" Line="92" Column="110" />
-      <File FileName="DAL/Persistence/MedicoDal.cs" Line="91" Column="21" />
+      <File FileName="DAL/Persistence/PacienteDal.cs" Line="95" Column="18" />
+      <File FileName="View/Pages/PacienteLista.aspx" Line="25" Column="54" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
