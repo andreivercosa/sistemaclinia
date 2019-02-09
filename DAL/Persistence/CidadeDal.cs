@@ -73,29 +73,25 @@ namespace DAL.Persistence
                 command = new MySqlCommand(sql, connection);
                 dataReader = command.ExecuteReader();
 
-                List<Cidade> listaCidade = new List<Cidade>();
 
-                while (dataReader.Read())
-                {
-                    Cidade cidade = new Cidade();
-                    EstadoDal estadoDal = new EstadoDal();
-
-                    cidade.Id = Convert.ToInt32(dataReader["id"]);
-                    cidade.IdEstado = Convert.ToInt32(dataReader["idEstado"]);
-                    cidade.Estado = estadoDal.pesquisarEstado(cidade.IdEstado);
-                    cidade.Descricao = dataReader["descricao"].ToString();
-                    listaCidade.Add(cidade);
-                }
                 DataTable dataTable = new DataTable();
                 dataTable.Columns.Add("idCidade");
                 dataTable.Columns.Add("cidade");
                 dataTable.Columns.Add("estado");
                 dataTable.Columns.Add("siglaEstado");
-
-                foreach (var cidade in  listaCidade)
+                while (dataReader.Read())
                 {
+                    Cidade cidade = new Cidade();
+                    EstadoDal estadoDal = new EstadoDal();
+
+
+                    cidade.Id = Convert.ToInt32(dataReader["id"]);
+                    cidade.IdEstado = Convert.ToInt32(dataReader["idEstado"]);
+                    cidade.Estado = estadoDal.pesquisarEstado(cidade.IdEstado);
+                    cidade.Descricao = dataReader["descricao"].ToString();
                     dataTable.Rows.Add(cidade.Id, cidade.Descricao, cidade.Estado.Nome, cidade.Estado.Sigla);
                 }
+
                 return dataTable;
 
             }

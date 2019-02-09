@@ -44,6 +44,7 @@
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Medico <span class="caret"></span></a>
               <ul class="dropdown-menu">
             <li><a href="http://127.0.0.1:8080/Pages/MedicoCadastro.aspx">Cadastro</a></li>
+            <li><a href="http://127.0.0.1:8080/Pages/MedicoLista.aspx">Lista</a></li>
               </ul>
             </li>
             <li class="dropdown">

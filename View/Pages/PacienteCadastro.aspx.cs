@@ -6,6 +6,7 @@ using DAL.Persistence;
 using System.Threading;
 using System.Collections.Generic;
 using System.Web.UI.WebControls;
+using System.Data;
 
 namespace View.Pages
 {
@@ -54,7 +55,6 @@ namespace View.Pages
             {
                 idCidade.Items.Insert(0, new ListItem(cidade.Descricao, cidade.Id.ToString()));
             }
-
 
         }
     }

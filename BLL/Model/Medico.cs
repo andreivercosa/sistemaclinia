@@ -8,6 +8,7 @@ namespace BLL.Model
         public int IdEspecialidade { get; set; }
         public string Nome { get; set; }
         public string CRM { get; set; }
+        public Especialidade Especialidade { get; set; }
         public string DtCadastro { get; set; }
 
         public Medico()

@@ -8,3 +8,4 @@
 /Users/aluno/Projects/SoluctionClinica/DAL/obj/Debug/DAL.csproj.CopyComplete
 /Users/aluno/Projects/SoluctionClinica/DAL/obj/Debug/DAL.dll
 /Users/aluno/Projects/SoluctionClinica/DAL/obj/Debug/DAL.pdb
+/Users/aluno/Projects/SoluctionClinica/DAL/obj/Debug/DAL.csprojAssemblyReference.cache
