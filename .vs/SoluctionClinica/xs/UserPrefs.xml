@@ -2,7 +2,7 @@
   <MonoDevelop.Ide.ItemProperties.View PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="DAL/Persistence/PacienteDal.cs">
     <Files>
-      <File FileName="DAL/Persistence/PacienteDal.cs" Line="95" Column="18" />
+      <File FileName="DAL/Persistence/PacienteDal.cs" Line="93" Column="84" />
       <File FileName="View/Pages/PacienteLista.aspx" Line="25" Column="54" />
     </Files>
   </MonoDevelop.Ide.Workbench>
